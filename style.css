@@ -149,9 +149,9 @@ main {
     padding: 20px;
     margin: 20px auto; /* Կենտրոնացում */
     max-width: 1000px;
-    width: 90%;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    padding-top: 30px;
 }
 .validation-module {
     padding: 50px 5%;
@@ -338,7 +338,10 @@ main {
     .hero p {
         font-size: 1em;
     }
-
+    .module {
+        /* Ավելացրեք բավարար padding, որպեսզի վերնագիրը (h2) տեսանելի լինի */
+        padding-top: 30px !important; 
+    }
     /* Մոդուլների Ակնարկ */
     .module-overview {
         padding: 30px 3%;
@@ -355,4 +358,5 @@ main {
     }
 
 }
+
 
