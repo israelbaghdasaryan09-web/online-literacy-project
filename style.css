@@ -340,7 +340,7 @@ main {
     }
     .module {
         /* Ավելացրեք բավարար padding, որպեսզի վերնագիրը (h2) տեսանելի լինի */
-        padding-top: 30px !important; 
+        padding-top: 40px !important; 
     }
     /* Մոդուլների Ակնարկ */
     .module-overview {
@@ -356,7 +356,10 @@ main {
         width: 90%; /* Լայնությունը դարձնում ենք 90% */
         margin: 10px 0;
     }
-
+    #payment-security h2 {
+        font-size: 1.5em; 
+    }
 }
+
 
 
