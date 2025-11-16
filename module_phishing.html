@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="OIP.webp">
+    <title>Ֆիշինգի Թեստ | Օնլայն Գրագիտություն</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-phishing"> <header>
+        <div class="logo">
+            <h1>🛡️ ԳՐԱԳԵՏ ԳՆՈՐԴ</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Գլխավոր</a></li>
+                <li><a href="module_sites.html">Վստահելի Կայքեր</a></li>
+                <li><a href="module_payments.html">Քարտի Անվտանգություն</a></li>
+                <li><a href="module_rights.html">Իրավունքներ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="phishing-quiz" class="module quiz-module">
+            <h2>🚨 Փորձարկի՛ր Քո Գիտելիքները. Ֆիշինգի Թեստ</h2>
+            <p class="intro-text">
+                Ստուգեք, թե որքանով եք կարողանում տարբերակել իսկական էլ. նամակները և զանգերը խարդախության փորձերից։
+            </p>
+
+            <form id="quiz-form">
+                
+                <div class="quiz-question">
+                    <h4>Հարց 1. Ո՞րն է կասկածելի (ֆիշինգային) էլ. հասցե:</h4>
+                    <label><input type="radio" name="q1" value="a"> a) support@amazon.com</label><br>
+                    <label><input type="radio" name="q1" value="b"> b) amazon-security@gmail.com</label><br>
+                    <label><input type="radio" name="q1" value="c"> c) billing@updates.amazon.com</label>
+                </div>
+                
+                <div class="quiz-question">
+                    <h4>Հարց 2. Ֆիշինգային հաղորդագրությունները հաճախ ստեղծում են շտապողականության զգացում։ Ո՞ր նախադասությունը պետք է անմիջապես կասկած առաջացնի:</h4>
+                    <label><input type="radio" name="q2" value="a"> a) «Ձեր հաշիվը կասեցվելու է 2 ժամվա ընթացքում, եթե հիմա չմուտք գործեք»</label><br>
+                    <label><input type="radio" name="q2" value="b"> b) «Մենք թարմացրել ենք մեր Ծառայությունների Պայմանները»</label><br>
+                    <label><input type="radio" name="q2" value="c"> c) «Ձեր գնումների հաշիվ-ապրանքագիրը կցված է ստորև»</label>
+                </div>
+                
+                <div class="quiz-question">
+                    <h4>Հարց 3. Դուք ստացել եք հեռախոսազանգ, որտեղ անվտանգության աշխատակիցը պահանջում է ձեր վճարային քարտի CVV/CVC կոդը։ Ինչպե՞ս պետք է վարվեք։</h4>
+                    <label><input type="radio" name="q3" value="a"> a) Տրամադրել կոդը, քանի որ դա բանկի պահանջն է։</label><br>
+                    <label><input type="radio" name="q3" value="b"> b) Անմիջապես անջատել հեռախոսը և զանգահարել բանկի պաշտոնական թեժ գիծ։</label><br>
+                    <label><input type="radio" name="q3" value="c"> c) Ասել, որ կանեք դա, բայց նախ ստուգել բանկի կայքը։</label>
+                </div>
+                
+                <button type="button" id="check-quiz">ՍՏՈՒԳԵԼ ՊԱՏԱՍԽԱՆՆԵՐԸ</button>
+                <p id="quiz-result"></p>
+                
+            </form>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

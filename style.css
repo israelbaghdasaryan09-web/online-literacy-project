@@ -1,0 +1,353 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Ավելացրեք հիմնական ֆոնային գույնը (օրինակ՝ բաց մոխրագույն կամ սպիտակ) */
+    background-color: #f4f4f9; 
+    color: #333;
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+} 
+.bg-home, .bg-payments, .bg-phishing, .bg-rights{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.bg-home{
+    background-image: url('online-shopping-2024.jpg');
+}
+.bg-sites {
+    background-image: url('bit202209201545181317.jpg');
+    background-size: 110%;
+}
+/* Քարտի Անվտանգության Ֆոն */
+.bg-payments {
+    background-image: url('1200x630.png'); /* Փոխարինեք Ձեր նկարի հղումով */
+}
+.bg-phishing{
+    background-image: url('Beware-of-Phishing-Emails-as-Spam-Filter-Alerts-Steal-Your-Email-Logins-in-a-Blink.jpg');
+
+}
+.bg-rights{
+    background-image: url('1_rilhpuryCTfikeNsLflBlw.jpg');
+}
+
+/* Header և Նավիգացիա */
+header {
+    background-color: #1e3a8a; /* Մուգ կապույտ */
+    color: white;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+header nav ul li a {
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
+}
+header nav ul li a:hover {
+    background-color: #3b82f6; /* Ավելի բաց կապույտ */
+}
+
+/* Hero Բաժինը պետք է ունենա այս ամբողջ ոճը, որպեսզի ճիշտ ցուցադրվի */
+.hero {
+    /* Քանի որ դուք ունեք ընդհանուր body ֆոն, hero-ի համար կարող եք թողնել այս ոճը, 
+       կամ եթե ցանկանում եք, որ այն դինամիկ տեսք ունենա, կարող եք այն փոխել:
+    */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)); /* Ֆոնային թափանցիկություն */
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    height: 40vh; /* Բարձրություն */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+.hero p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+.btn-primary {
+    background-color: #f59e0b; /* Ակնառու գույն */
+    color: #1e3a8a;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.btn-primary:hover {
+    background-color: #fbbf24;
+}
+
+/* Մոդուլների Ակնարկ */
+.module-overview {
+    padding: 50px 5%;
+    text-align: center;
+    color: #fbbf24;
+}
+.module-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+.card .icon {
+    font-size: 2em;
+    display: block;
+    margin-bottom: 10px;
+}
+.logo{
+    margin: 0;
+    font-size: 1.5em;
+}
+
+
+
+
+
+
+/* ... (նախորդ header, hero և media queries ոճերը) ... */
+
+/* Կայքի Վալիդացիայի Մոդուլի հատուկ ոճերը */
+main {
+    background-color: rgba(255, 255, 255, 0.9); /* Կիսաթափանցիկ սպիտակ ֆոն */
+    padding: 20px;
+    margin: 20px auto; /* Կենտրոնացում */
+    max-width: 1000px;
+    width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+.validation-module {
+    padding: 50px 5%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.check-item {
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+.check-item h3 {
+    color: #1e3a8a; /* Մուգ կապույտ */
+    border-bottom: 2px solid #3b82f6;
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+.example-text {
+    font-size: 0.9em;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+.good-example {
+    color: #4CAF50; /* Կանաչ */
+    font-weight: bold;
+}
+
+.bad-example {
+    color: #F44336; /* Կարմիր */
+    font-weight: bold;
+}
+
+
+
+
+
+/* Ֆիշինգի մոդուլի ոճեր */
+.quiz-module {
+    padding: 30px;
+}
+
+.quiz-question {
+    background-color: #f7f7f7;
+    border-left: 5px solid #ff9800; /* Նարնջագույն գիծ զգուշացնելու համար */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+#check-quiz {
+    background-color: #f44336; /* Կարմիր կոճակ */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+/* Արդյունքների Դասեր */
+#quiz-result {
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.quiz-success {
+    background-color: #e8f5e9; /* Բաց կանաչ ֆոն */
+    color: #4CAF50; /* Մուգ կանաչ տեքստ */
+}
+
+.quiz-warning {
+    background-color: #fffde7; /* Բաց դեղին ֆոն */
+    color: #ffc107; /* Մուգ դեղին տեքստ */
+}
+
+.quiz-fail {
+    background-color: #ffebee; /* Բաց կարմիր ֆոն */
+    color: #f44336; /* Մուգ կարմիր տեքստ */
+}
+
+
+
+
+/* Իրավունքների Մոդուլի Ոճեր */
+.rights-module {
+    padding: 50px 5%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.right-point {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.right-point h3 {
+    margin-top: 0;
+}
+
+/* Տեղեկատվական Քարտ (Կապույտ) */
+.info-card {
+    background-color: #e3f2fd;
+    border: 1px solid #2196F3;
+}
+
+/* Զգուշացման Քարտ (Դեղին/Նարնջագույն) */
+.warning-card-small {
+    background-color: #fff3e0;
+    border: 1px solid #ff9800;
+}
+
+/* Դրական Կողմի Քարտ (Կանաչ) */
+.success-card-small {
+    background-color: #e8f5e9;
+    border: 1px solid #4CAF50;
+}
+
+.info-box-rights {
+    padding: 15px;
+    margin-top: 30px;
+    border-top: 2px solid #1e3a8a;
+    background-color: #f9f9f9;
+}
+
+
+
+
+
+
+/* Media Query-ներ փոքր էկրանների (պլանշետներ և բջջային հեռախոսներ) համար */
+@media (max-width: 768px) {
+    
+    /* Փոքրացնում ենք ընդհանուր լայնացումները/padding-ները */
+    body {
+        padding-top: 50px; /* Տեղ թողնել ֆիքսված header-ի համար */
+    }
+    
+    /* Header-ի Ձևափոխում */
+    header {
+        flex-direction: column; /* Էլեմենտները շարում ենք ուղղահայաց */
+        padding: 10px 3%;
+        position: fixed; /* Ֆիքսում ենք վերևում */
+        width: 100%;
+        top: 0;
+        z-index: 1000; /* Որպեսզի լինի մյուս էլեմենտների վերևում */
+    }
+    
+    /* Նավիգացիայի Ձևափոխում */
+    header nav {
+        width: 100%;
+        margin-top: 10px;
+    }
+    header nav ul {
+        flex-direction: column; /* Մենյուի կետերը մեկը մյուսի տակ */
+        text-align: center;
+    }
+    header nav ul li a {
+        padding: 5px; /* Փոքրացնում ենք կոճակների չափերը */
+    }
+    
+    /* Hero Բաժին (Banner) */
+    .hero {
+        padding: 80px 10px;
+        height: auto; /* Թույլ ենք տալիս բարձրությանը հարմարվել բովանդակությանը */
+    }
+    .hero h2 {
+        font-size: 1.8em; /* Փոքրացնում ենք վերնագրի չափը */
+    }
+    .hero p {
+        font-size: 1em;
+    }
+
+    /* Մոդուլների Ակնարկ */
+    .module-overview {
+        padding: 30px 3%;
+    }
+    
+    /* Մոդուլների Քարտեր */
+    .module-cards {
+        flex-direction: column; /* Քարտերը մեկը մյուսի տակ */
+        align-items: center; /* Կենտրոնացնում ենք */
+    }
+    .card {
+        width: 90%; /* Լայնությունը դարձնում ենք 90% */
+        margin: 10px 0;
+    }
+}
