@@ -298,7 +298,7 @@ main {
     
     /* Փոքրացնում ենք ընդհանուր լայնացումները/padding-ները */
     body {
-        padding-top: 50px; /* Տեղ թողնել ֆիքսված header-ի համար */
+        padding-top: 130px; /* Տեղ թողնել ֆիքսված header-ի համար */
     }
     
     /* Header-ի Ձևափոխում */
@@ -310,7 +310,10 @@ main {
         top: 0;
         z-index: 1000; /* Որպեսզի լինի մյուս էլեմենտների վերևում */
     }
-    
+    header .logo h1{
+        font-size: 1.2em;
+        word-break: break-word;
+    }
     /* Նավիգացիայի Ձևափոխում */
     header nav {
         width: 100%;
@@ -350,4 +353,5 @@ main {
         width: 90%; /* Լայնությունը դարձնում ենք 90% */
         margin: 10px 0;
     }
+
 }
