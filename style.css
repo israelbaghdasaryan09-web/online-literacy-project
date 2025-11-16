@@ -324,7 +324,7 @@ main {
         text-align: center;
     }
     header nav ul li a {
-        padding: 5px; /* Փոքրացնում ենք կոճակների չափերը */
+        padding: 2px 5px; /* Փոքրացնում ենք կոճակների չափերը */
     }
     
     /* Hero Բաժին (Banner) */
@@ -360,6 +360,7 @@ main {
         font-size: 1.5em; 
     }
 }
+
 
 
 
