@@ -288,6 +288,35 @@ main {
     background-color: #f9f9f9;
 }
 
+/* Ֆիշինգի Թեստի Բացատրության Ոճեր */
+.explanation-box {
+    margin-top: 10px;
+    padding: 15px;
+    border: 1px solid #ffc107;
+    background-color: #fff8e1;
+    color: #333;
+    border-radius: 5px;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+.explanation-box.error {
+    border-color: #dc3545;
+    background-color: #f8d7da;
+    color: #721c24;
+}
+.explanation-box.warning {
+    border-color: #ffc107;
+    background-color: #fff3cd;
+    color: #856404;
+}
+.explanation-box strong {
+    font-weight: bold;
+}
+
+
+
+
+
 
 
 
@@ -360,6 +389,7 @@ main {
         font-size: 1.5em; 
     }
 }
+
 
 
 
