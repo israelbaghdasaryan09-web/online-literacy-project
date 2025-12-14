@@ -14,7 +14,7 @@ a {
     text-decoration: none;
     color: #007bff;
 } 
-.bg-home, .bg-payments, .bg-phishing, .bg-rights{
+.bg-home, .bg-payments, .bg-phishing, .bg-rights, .bg-sites{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -343,6 +343,11 @@ main {
         font-size: 1.2em;
         word-break: break-word;
     }
+    .bg-home, .bg-payments, .bg-phishing, .bg-rights, .bg-sites {
+        /* Անջատում ենք ֆիքսվածությունը բջջայինում, որպեսզի նկարը ոլորվի էջի հետ միասին: */
+        background-attachment: scroll; 
+        /* Սա կօգնի կանխել «ոչ կպած» լինելու էֆեկտը։ */
+    }
     /* Նավիգացիայի Ձևափոխում */
     header nav {
         width: 100%;
@@ -389,6 +394,7 @@ main {
         font-size: 1.5em; 
     }
 }
+
 
 
 
