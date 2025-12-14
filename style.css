@@ -14,7 +14,7 @@ a {
     text-decoration: none;
     color: #007bff;
 } 
-.bg-home, .bg-payments, .bg-phishing, .bg-rights, .bg-sites{
+.bg-home, .bg-payments, .bg-phishing, .bg-rights, .bg-sites {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -49,6 +49,7 @@ header {
     justify-content: space-between;
     align-items: center;
     top: 0;
+    box-shadow: none !important;
 }
 header nav ul {
     list-style: none;
@@ -287,7 +288,6 @@ main {
     border-top: 2px solid #1e3a8a;
     background-color: #f9f9f9;
 }
-
 /* Ֆիշինգի Թեստի Բացատրության Ոճեր */
 .explanation-box {
     margin-top: 10px;
@@ -321,7 +321,6 @@ main {
 
 
 
-
 /* Media Query-ներ փոքր էկրանների (պլանշետներ և բջջային հեռախոսներ) համար */
 @media (max-width: 768px) {
     
@@ -329,20 +328,20 @@ main {
     body {
         padding-top: 150px; /* Տեղ թողնել ֆիքսված header-ի համար */
     }
-    
-    /* Header-ի Ձևափոխում */
     header {
-        flex-direction: column; /* Էլեմենտները շարում ենք ուղղահայաց */
-        padding: 5px 3%;
-        position: fixed; /* Ֆիքսում ենք վերևում */
+        flex-direction: column; /* ԱՎԵԼԱՑՐԵՔ ԱՅՍ ՏՈՂԸ! */
+        padding: 8px 3%;
+        position: fixed; /* Այս ոճերը պետք է լինեն հիմնական header-ի մեջ, կամ այստեղ: */
         width: 100%;
         top: 0;
-        z-index: 1000; /* Որպեսզի լինի մյուս էլեմենտների վերևում */
+        z-index: 1000;
+    }
+    /* Header-ի Ձևափոխում */
+    header .logo{
+        margin-bottom: 5px;
     }
     header .logo h1{
         font-size: 1.2em;
-        word-break: break-word;
-        margin: 0;
     }
     .bg-home, .bg-payments, .bg-phishing, .bg-rights, .bg-sites {
         /* Անջատում ենք ֆիքսվածությունը բջջայինում, որպեսզի նկարը ոլորվի էջի հետ միասին: */
@@ -360,7 +359,7 @@ main {
         text-align: center;
     }
     header nav ul li a {
-        padding: 5px; /* Փոքրացնում ենք կոճակների չափերը */
+        padding: 5px 10px; /* Փոքրացնում ենք կոճակների չափերը */
         font-size: 1em;
     }
     
@@ -375,6 +374,7 @@ main {
     .hero p {
         font-size: 1em;
     }
+    
     .module {
         /* Ավելացրեք բավարար padding, որպեսզի վերնագիրը (h2) տեսանելի լինի */
         padding-top: 40px !important; 
@@ -397,18 +397,3 @@ main {
         font-size: 1.5em; 
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
