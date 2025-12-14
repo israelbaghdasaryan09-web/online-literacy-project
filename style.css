@@ -118,7 +118,7 @@ header nav ul li a:hover {
     padding: 20px;
     margin: 15px;
     width: 200px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
     text-align: left;
     transition: transform 0.2s, box-shadow 0.2s;
 }
@@ -397,6 +397,7 @@ main {
         font-size: 1.5em; 
     }
 }
+
 
 
 
