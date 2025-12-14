@@ -119,13 +119,13 @@ header nav ul li a:hover {
     padding: 20px;
     margin: 15px;
     width: 200px;
-    box-shadow: none;
+    box-shadow: none !important;
     text-align: left;
     transition: transform 0.2s, box-shadow 0.2s;
 }
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: none;
+    box-shadow: none !important;
 }
 .card .icon {
     font-size: 2em;
@@ -257,7 +257,7 @@ main {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: none;
+    box-shadow: none !important;
 }
 
 .right-point h3 {
@@ -326,11 +326,14 @@ main {
     
     /* Փոքրացնում ենք ընդհանուր լայնացումները/padding-ները */
     body {
-        padding-top: 150px; /* Տեղ թողնել ֆիքսված header-ի համար */
+        padding-top: 150px !important; /* Տեղ թողնել ֆիքսված header-ի համար */
     }
     header {
+        max-height: 110px !important;
+        min-height: 110px !important;
         flex-direction: column; /* ԱՎԵԼԱՑՐԵՔ ԱՅՍ ՏՈՂԸ! */
-        padding: 8px 3%;
+        padding: 5px 3%;
+        overflow: hidden;
         position: fixed; /* Այս ոճերը պետք է լինեն հիմնական header-ի մեջ, կամ այստեղ: */
         width: 100%;
         top: 0;
