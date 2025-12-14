@@ -50,6 +50,7 @@ header {
     align-items: center;
     top: 0;
     box-shadow: none !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 header nav ul {
     list-style: none;
@@ -326,13 +327,11 @@ main {
     
     /* Փոքրացնում ենք ընդհանուր լայնացումները/padding-ները */
     body {
-        padding-top: 150px !important; /* Տեղ թողնել ֆիքսված header-ի համար */
+        padding-top: 180px; /* Տեղ թողնել ֆիքսված header-ի համար */
     }
     header {
-        max-height: 110px !important;
-        min-height: 110px !important;
         flex-direction: column; /* ԱՎԵԼԱՑՐԵՔ ԱՅՍ ՏՈՂԸ! */
-        padding: 5px 3%;
+        padding: 8px 3%;
         overflow: hidden;
         position: fixed; /* Այս ոճերը պետք է լինեն հիմնական header-ի մեջ, կամ այստեղ: */
         width: 100%;
@@ -354,8 +353,8 @@ main {
     /* Նավիգացիայի Ձևափոխում */
     header nav {
         width: 100%;
-        margin-top: 3px;
-        margin-bottom: 3px;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
     header nav ul {
         flex-direction: column; /* Մենյուի կետերը մեկը մյուսի տակ */
