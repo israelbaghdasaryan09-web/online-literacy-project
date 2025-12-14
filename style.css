@@ -152,7 +152,7 @@ main {
     margin: 20px auto; /* Կենտրոնացում */
     max-width: 1000px;
     border-radius: 8px;
-    box-shadow: none;
+    box-shadow: none !important;
     padding-top: 30px;
 }
 .validation-module {
@@ -258,7 +258,7 @@ main {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: none;
+    box-shadow: none !important;
 }
 
 .right-point h3 {
@@ -375,6 +375,8 @@ main {
     .hero {
         padding: 80px 10px;
         height: auto;
+        box-shadow: none !important;
+        margin-top: -30px;
     }
 
     /* 7. ԲՈՎԱՆԴԱԿՈՒԹՅԱՆ ՏԱՐԱԾՔՆԵՐ */
