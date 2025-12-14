@@ -126,7 +126,7 @@ header nav ul li a:hover {
 }
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: none !important;
+    box-shadow: none;
 }
 .card .icon {
     font-size: 2em;
@@ -258,7 +258,7 @@ main {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: none !important;
+    box-shadow: none;
 }
 
 .right-point h3 {
@@ -321,78 +321,75 @@ main {
 
 
 
-
-/* Media Query-ներ փոքր էկրանների (պլանշետներ և բջջային հեռախոսներ) համար */
 @media (max-width: 768px) {
     
-    /* Փոքրացնում ենք ընդհանուր լայնացումները/padding-ները */
+    /* 1. BODY ՈՃԵՐ (Համոզվում ենք, որ բովանդակությունը իջած է ներքև) */
     body {
-        padding-top: 180px; /* Տեղ թողնել ֆիքսված header-ի համար */
+        /* 170px-ը ապահովում է, որ Header-ի տակ սև տարածք չերևա։ */
+        padding-top: 170px !important; 
     }
+
+    /* 2. HEADER ՈՃԵՐ (Մենք ՀԱՆՈՒՄ ենք overflow: hidden; ոճը) */
     header {
-        flex-direction: column; /* ԱՎԵԼԱՑՐԵՔ ԱՅՍ ՏՈՂԸ! */
-        padding: 8px 3%;
-        overflow: hidden;
-        position: fixed; /* Այս ոճերը պետք է լինեն հիմնական header-ի մեջ, կամ այստեղ: */
+        flex-direction: column; 
+        padding: 8px 3%; 
+        /* ՈՉՆՉԱՑՆՈՒՄ ԵՆՔ ԱՅՍ ՏՈՂԸ` overflow: hidden; */
+        position: fixed; 
         width: 100%;
         top: 0;
         z-index: 1000;
     }
-    /* Header-ի Ձևափոխում */
-    header .logo{
+
+    /* 3. LOGO ՈՃԵՐ */
+    header .logo {
         margin-bottom: 5px;
     }
     header .logo h1{
         font-size: 1.2em;
+        word-break: break-word;
     }
-    .bg-home, .bg-payments, .bg-phishing, .bg-rights, .bg-sites {
-        /* Անջատում ենք ֆիքսվածությունը բջջայինում, որպեսզի նկարը ոլորվի էջի հետ միասին: */
-        background-attachment: scroll !important; 
-        /* Սա կօգնի կանխել «ոչ կպած» լինելու էֆեկտը։ */
-    }
-    /* Նավիգացիայի Ձևափոխում */
+    
+    /* 4. ՆԱՎԻԳԱՑԻԱՅԻ ԿԱՐԳԱՎՈՐՈՒՄ (Փոխում ենք column-ից row/wrap-ի) */
     header nav {
         width: 100%;
         margin-top: 5px;
         margin-bottom: 5px;
     }
     header nav ul {
-        flex-direction: column; /* Մենյուի կետերը մեկը մյուսի տակ */
+        flex-direction: row; /* <--- ԿԱՐԵՎՈՐ Է: Կետերը մեկ տողի վրա */
+        flex-wrap: wrap; /* <--- Թույլ տալիս ենք տողադարձ, եթե էկրանը շատ փոքր է */
+        justify-content: center; /* Կենտրոնացնում ենք */
         text-align: center;
     }
     header nav ul li a {
-        padding: 5px 10px; /* Փոքրացնում ենք կոճակների չափերը */
-        font-size: 1em;
+        padding: 5px 8px; /* Փոքրացնում ենք կոճակների չափերը */
+        font-size: 0.9em; /* Փոքրացնում ենք տառաչափը, որ տեղավորվի */
     }
     
-    /* Hero Բաժին (Banner) */
+    /* 5. ՖՈՆԱՅԻՆ ՆԿԱՐՆԵՐԻ ՇՏԿՈՒՄ (Եթե ստվեր դեռ երևում է, մաքրեք քեշը) */
+    .bg-home, .bg-payments, .bg-phishing, .bg-rights, .bg-sites {
+        background-attachment: scroll !important; 
+    }
+    
+    /* 6. HERO ԲԱԺԻՆ */
     .hero {
         padding: 80px 10px;
-        height: auto; /* Թույլ ենք տալիս բարձրությանը հարմարվել բովանդակությանը */
+        height: auto;
     }
-    .hero h2 {
-        font-size: 1.8em; /* Փոքրացնում ենք վերնագրի չափը */
-    }
-    .hero p {
-        font-size: 1em;
-    }
-    
+
+    /* 7. ԲՈՎԱՆԴԱԿՈՒԹՅԱՆ ՏԱՐԱԾՔՆԵՐ */
     .module {
-        /* Ավելացրեք բավարար padding, որպեսզի վերնագիրը (h2) տեսանելի լինի */
         padding-top: 40px !important; 
     }
-    /* Մոդուլների Ակնարկ */
     .module-overview {
         padding: 30px 3%;
     }
-    
-    /* Մոդուլների Քարտեր */
     .module-cards {
-        flex-direction: column; /* Քարտերը մեկը մյուսի տակ */
-        align-items: center; /* Կենտրոնացնում ենք */
+        flex-direction: column; 
+        align-items: center;
     }
     .card {
-        width: 90%; /* Լայնությունը դարձնում ենք 90% */
+        width: 90%; 
         margin: 10px 0;
     }
     #payment-security h2 {
